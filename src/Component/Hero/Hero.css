@@ -32,6 +32,10 @@
   animation: rotateImage 10s linear infinite;
 }
 
+.hero-image.rotate:hover {
+  animation: rotateImage 1s linear infinite;
+}
+
 .hero-title {
   font-size: 3rem;
   font-weight: bold;

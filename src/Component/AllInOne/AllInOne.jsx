@@ -1,13 +1,13 @@
 import About from "../About/About";
 import Contact from "../Contact/Contact";
-import CryptoList from "../CryptoList/CryptoList";
+import Footer from "../Footer/Footer";
 
 const AllInOne = () => {
   return (
     <>
-      <CryptoList />
       <About />
       <Contact />
+      <Footer />
     </>
   );
 };
