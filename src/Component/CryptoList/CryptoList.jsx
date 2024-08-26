@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import "./CryptoList.css"; // Ensure Tailwind CSS is imported here
 
 const CryptoList = () => {
@@ -60,7 +60,7 @@ const CryptoList = () => {
       />
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {filteredData.map((item) => (
-          <div key={item.id} className="bg-white p-4 rounded-lg shadow-lg">
+          <div key={item.id} className="crypto-card p-4 rounded-lg shadow-lg">
             <h2 className="text-xl font-semibold">{item.name}</h2>
             <p>
               <strong>Coin:</strong> {item.coin}
