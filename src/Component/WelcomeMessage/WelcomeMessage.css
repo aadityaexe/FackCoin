@@ -1,0 +1,79 @@
+/* Keyframes for img1 coming from the left */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%) translateY(-50%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0) translateY(-50%);
+    opacity: 1;
+  }
+}
+
+/* Keyframes for img2 coming from the right */
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%) translateY(-50%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0) translateY(-50%);
+    opacity: 1;
+  }
+}
+
+/* Applying transition to the div */
+.welcome-container {
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  position: relative;
+  padding: 20px;
+}
+
+/* Applying transition and animation to h1 */
+.welcome-container h1 {
+  animation: fadeIn 1s ease-in-out forwards;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Applying transition and animation to p */
+.welcome-container p {
+  animation: fadeIn 1.5s ease-in-out forwards;
+  transition: color 0.3s ease-in-out;
+}
+
+.welcome-container img.img-1 {
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 250px;
+  /* Adjusted size for responsiveness */
+  height: auto;
+  animation: slideInFromLeft 1s ease-in-out forwards;
+}
+
+.welcome-container img.img-2 {
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 250px;
+  /* Adjusted size for responsiveness */
+  height: auto;
+  animation: slideInFromRight 1s ease-in-out forwards;
+}
+
+@media (max-width: 768px) {
+  .welcome-container img {
+    width: 100px;
+    /* Smaller size for mobile screens */
+  }
+
+  .welcome-container img.img-1 {
+    width: 200px;
+  }
+
+  .welcome-container img.img-2 {
+    width: 200px;
+  }
+}
