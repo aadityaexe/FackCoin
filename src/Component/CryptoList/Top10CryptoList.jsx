@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import "./CryptoList.css"; // Ensure Tailwind CSS is imported here
+import "./CryptoList.css";
 
 const Top10CryptoList = () => {
   const [top10Data, setTop10Data] = useState([]);

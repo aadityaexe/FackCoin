@@ -33,28 +33,28 @@ const Footer = () => {
             aria-label="Twitter"
             className="hover:scale-110 transform transition"
           >
-            <i className="fab fa-twitter"></i>
+            <i className="fab fa-twitter">Twitter</i>
           </a>
           <a
             href="https://facebook.com"
             aria-label="Facebook"
             className="hover:scale-110 transform transition"
           >
-            <i className="fab fa-facebook"></i>
+            <i className="fab fa-facebook">Facebook</i>
           </a>
           <a
             href="https://linkedin.com"
             aria-label="LinkedIn"
             className="hover:scale-110 transform transition"
           >
-            <i className="fab fa-linkedin"></i>
+            <i className="fab fa-linkedin">LinkedIn</i>
           </a>
           <a
             href="https://instagram.com"
             aria-label="Instagram"
             className="hover:scale-110 transform transition"
           >
-            <i className="fab fa-instagram"></i>
+            <i className="fab fa-instagram">Instagram</i>
           </a>
         </div>
       </div>
