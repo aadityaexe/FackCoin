@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import "./CryptoList.css"; // Ensure Tailwind CSS is imported here
 
 const CryptoList = () => {
