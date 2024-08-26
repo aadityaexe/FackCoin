@@ -1,0 +1,30 @@
+/* Navbar.css */
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.navbar-visible {
+  animation: slideDown 3s ease-in-out forwards;
+}
+
+.navbar-hidden {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+nav {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul li a:hover {
+  color: #f0a189;
+  /* Hover effect */
+}

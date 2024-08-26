@@ -1,0 +1,103 @@
+.hero-section {
+  position: relative;
+  color: #fff;
+  overflow: hidden;
+  height: 100vh;
+  /* Full viewport height */
+}
+
+.hero-image {
+  margin-top: -109px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 250px;
+  height: 250px;
+  margin-left: 224px;
+  transition: transform 3s ease;
+  /* Add rotation effect */
+}
+
+/* Add a keyframe animation for rotating the hero image */
+@keyframes rotateImage {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.hero-image.rotate {
+  animation: rotateImage 10s linear infinite;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 2.5rem;
+  animation: fadeIn 4s ease-in-out 0s forwards;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  animation: fadeIn 4s ease-in-out 0s forwards;
+}
+
+.hero-button {
+  display: inline-block;
+  background-color: #2563eb;
+  color: #fff;
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  animation: fadeIn 4s ease-in-out 0s forwards;
+}
+
+.hero-button:hover {
+  background-color: #1d4ed8;
+}
+
+/* Keyframes for fadeIn animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 1.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.875rem;
+  }
+
+  .hero-button {
+    padding: 0.5rem 1rem;
+  }
+
+  .hero-image {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-image {
+    max-width: 100%;
+    height: auto;
+    margin-left: 168px;
+  }
+}
