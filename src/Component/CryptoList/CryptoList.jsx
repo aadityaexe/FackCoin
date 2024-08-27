@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import "./CryptoList.css"; // Ensure Tailwind CSS is imported here
+import "./CryptoList.css"; // Ensure Tailwind CSS and custom CSS are imported here
 
 const CryptoList = () => {
   const [data, setData] = useState([]);
@@ -46,7 +46,13 @@ const CryptoList = () => {
     }
   }, [searchTerm, data]);
 
-  if (loading) return <p>Loading...</p>;
+  if (loading) {
+    return (
+      <div className="flex justify-center items-center h-screen">
+        <div className="loader ease-linear rounded-full border-8 border-t-8 border-gray-200 h-32 w-32"></div>
+      </div>
+    );
+  }
 
   return (
     <div className="container mx-auto p-4 pt-20 z-0">
@@ -61,20 +67,22 @@ const CryptoList = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 pt-10">
         {filteredData.map((item) => (
           <div key={item.id} className="crypto-card p-4 rounded-lg shadow-lg">
-            <h2 className="text-xl font-semibold">{item.name}</h2>
-            <p>
+            <h2 className="text-xl font-semibold slide-in-right">
+              {item.name}
+            </h2>
+            <p className="slide-in-right">
               <strong>Coin:</strong> {item.coin}
             </p>
-            <p>
+            <p className="slide-in-right">
               <strong>Type:</strong> {item.type}
             </p>
-            <p>
+            <p className="slide-in-right">
               <strong>Algorithm:</strong> {item.algorithm}
             </p>
-            <p>
+            <p className="slide-in-right">
               <strong>Price:</strong> ${item.price.toFixed(2)}
             </p>
-            <p>
+            <p className="slide-in-right">
               <strong>Volume:</strong> {item.volume.toLocaleString()}
             </p>
           </div>

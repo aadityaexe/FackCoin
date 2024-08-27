@@ -47,20 +47,22 @@ const Top10CryptoList = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {top10Data.map((item) => (
           <div key={item.id} className="crypto-card p-4 rounded-lg shadow-lg">
-            <h2 className="text-xl font-semibold">{item.name}</h2>
-            <p>
+            <h2 className="text-xl font-semibold slide-in-right">
+              {item.name}
+            </h2>
+            <p className="slide-in-right">
               <strong>Coin:</strong> {item.coin}
             </p>
-            <p>
+            <p className="slide-in-right">
               <strong>Type:</strong> {item.type}
             </p>
-            <p>
+            <p className="slide-in-right">
               <strong>Algorithm:</strong> {item.algorithm}
             </p>
-            <p>
+            <p className="slide-in-right">
               <strong>Price:</strong> ${item.price.toFixed(2)}
             </p>
-            <p>
+            <p className="slide-in-right">
               <strong>Volume:</strong> {item.volume.toLocaleString()}
             </p>
           </div>

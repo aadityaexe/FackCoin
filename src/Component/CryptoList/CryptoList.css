@@ -10,8 +10,56 @@
   }
 }
 
+@keyframes gradientAnimation {
+  0% {
+    background: linear-gradient(135deg, #bea5e7, #7047eb, #6b3b6d);
+  }
+
+  50% {
+    background: linear-gradient(135deg, #e977ed, #9871d7, #7855e0);
+  }
+
+  100% {
+    background: linear-gradient(135deg, #4c3c7b, #ca8ecd, #7941d3);
+  }
+}
+
 .crypto-card {
-  background: linear-gradient(135deg, #d3a6d3, #b0b0b0, #87ceeb);
-  animation: slideIn 0.5s ease-out;
+  animation:
+    slideIn 2s ease-out,
+    gradientAnimation 5s ease infinite;
+  background-size: 200% 200%;
   /* Add any additional styling you need */
+}
+
+.loader {
+  border-top-color: #3498db;
+  /* Customize the color */
+  animation: spinner 1.5s linear infinite;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-in-right {
+  animation: slideInRight 2.5s ease-in-out forwards;
 }
