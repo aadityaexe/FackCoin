@@ -1,10 +1,10 @@
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-r from-purple-600 via-gray-500 to-sky-500 text-white py-8 px-4">
+    <footer className=" bg-gradient-to-r from-purple-600 via-gray-500 to-sky-500 text-white py-8 px-4 z-0">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
         {/* Logo or Site Name */}
         <div className="text-center md:text-left">
-          <h1 className="text-2xl font-bold">Fack Coin</h1>
+          <h1 className="text-2xl font-bold">Fake Coin</h1>
           <p className="text-sm mt-2">
             &copy; 2024 CryptoSite. All Rights Reserved.
           </p>

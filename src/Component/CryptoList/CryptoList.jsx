@@ -49,8 +49,8 @@ const CryptoList = () => {
   if (loading) return <p>Loading...</p>;
 
   return (
-    <div className="container mx-auto p-4">
-      <h1 className="text-2xl font-bold mb-4">Crypto List</h1>
+    <div className="container mx-auto p-4 pt-20 z-0">
+      <h1 className="text-2xl text-white font-bold mb-4">Crypto List</h1>
       <input
         type="text"
         placeholder="Search by coin name"
@@ -58,7 +58,7 @@ const CryptoList = () => {
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
       />
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 pt-10">
         {filteredData.map((item) => (
           <div key={item.id} className="crypto-card p-4 rounded-lg shadow-lg">
             <h2 className="text-xl font-semibold">{item.name}</h2>

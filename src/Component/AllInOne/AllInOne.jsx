@@ -1,5 +1,4 @@
 import About from "../About/About";
-import CircularProgress from "../CircularProgress/CircularProgress";
 import Contact from "../Contact/Contact";
 import Top10CryptoList from "../CryptoList/Top10CryptoList";
 import Footer from "../Footer/Footer";
@@ -10,7 +9,6 @@ const AllInOne = () => {
     <>
       <WelcomeMessage />
       <Top10CryptoList />
-      <CircularProgress />
       <About />
       <Contact />
       <Footer />

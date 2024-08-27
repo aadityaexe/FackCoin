@@ -34,7 +34,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="relative pt-20">
+    <div className="relative pt-20 z-0">
       <div className="container mx-auto my-5 p-5 max-w-[90%] flex flex-col md:flex-row items-center justify-between space-y-8 md:space-y-0">
         <div className="flex-[0_0_48%] text-black bg-white/60 p-5 rounded-lg transition-transform duration-300 hover:backdrop-blur-sm hover:scale-105 animate-from-left">
           <h3 className="text-xl font-medium flex items-center mb-5 text-black">

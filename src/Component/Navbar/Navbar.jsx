@@ -16,7 +16,7 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto flex justify-between items-center">
-        <div className="text-lg">Fack Coin</div>
+        <div className="text-lg">Fake Coin</div>
         <ul className="flex space-x-4">
           <li>
             <Link to="/">Home</Link>

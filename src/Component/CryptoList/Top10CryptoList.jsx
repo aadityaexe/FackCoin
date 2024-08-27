@@ -40,7 +40,7 @@ const Top10CryptoList = () => {
   if (loading) return <p>Loading...</p>;
 
   return (
-    <div className="container mx-auto p-4">
+    <div className="container mx-auto p-4 z-0">
       <h1 className="text-2xl  text-blue-600 font-bold mb-4">
         Top 10 Cryptocurrencies
       </h1>
