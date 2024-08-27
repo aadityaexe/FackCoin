@@ -16,8 +16,8 @@ body {
   /* Replace with the path to your image */
   background-size: cover;
   /* This makes sure the image covers the entire background */
-
   background-repeat: no-repeat;
   /* Prevents the background image from repeating */
-
+  background-attachment: fixed;
+  /* Makes the background image stay fixed while scrolling */
 }

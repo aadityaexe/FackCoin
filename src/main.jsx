@@ -8,16 +8,27 @@ import AllInOne from "./Component/AllInOne/AllInOne.jsx";
 import About from "./Component/About/About.jsx";
 import Contact from "./Component/Contact/Contact.jsx";
 import CryptoList from "./Component/CryptoList/CryptoList.jsx";
+import TopCryptoSection from "./Component/MainPageList/TopCryptoSection/TopCryptoSection .jsx";
+import Top10CryptoList from "./Component/CryptoList/Top10CryptoList.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
     children: [
-      { path: "/", element: <Hero /> },
+      {
+        path: "/",
+        element: (
+          <>
+            <Hero />
+            <TopCryptoSection />
+          </>
+        ),
+      },
       { path: "/all", element: <AllInOne /> },
       { path: "/about", element: <About /> },
       { path: "/contact", element: <Contact /> },
       { path: "/crupto-list", element: <CryptoList /> },
+      { path: "/top10-crypto", element: <Top10CryptoList /> },
     ],
   },
 ]);
