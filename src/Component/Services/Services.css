@@ -1,0 +1,56 @@
+.services-card {
+  background: linear-gradient(135deg, #e977ed, #9871d7, #7855e0);
+  text-align: center;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  transform: scale(1);
+  transition: transform 0.5s ease;
+}
+
+.services-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+}
+
+.transition-h2 {
+  transition: transform 1s ease, opacity 1s ease;
+}
+
+.hidden-h2 {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.visible-h2 {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.transition-h3 {
+  transition: transform 1s ease 0.5s, opacity 1s ease 0.5s;
+}
+
+.hidden-h3 {
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+.visible-h3 {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.transition-p {
+  transition: transform 1s ease 1s, opacity 1s ease 1s;
+}
+
+.hidden-p {
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+.visible-p {
+  transform: translateX(0);
+  opacity: 1;
+}

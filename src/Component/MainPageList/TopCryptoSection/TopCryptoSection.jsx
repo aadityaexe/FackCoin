@@ -11,7 +11,7 @@ const TopCryptoSection = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center h-[50vh] text-white p-8">
+    <div className="flex flex-col items-center z-0 justify-center h-[50vh] text-white p-8">
       <h1
         className={`text-4xl font-bold mb-4 transition-h1 ${
           isVisible ? "visible-h1" : ""
