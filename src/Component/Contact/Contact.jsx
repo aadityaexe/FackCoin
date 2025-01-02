@@ -5,14 +5,12 @@ import phone_icon from "./Contact-assets/phone-icon.png";
 import location_icon from "./Contact-assets/location-icon.png";
 import white_arrow from "./Contact-assets/white-arrow.png";
 
-import "./Contact.css";
-
 const Contact = () => {
   const [result, setResult] = useState("");
 
   const onSubmit = async (event) => {
     event.preventDefault();
-    setResult("Sending....");
+    setResult("Sending...");
     const formData = new FormData(event.target);
 
     formData.append("access_key", "5315aff3-6490-4eeb-8d17-8ecf0d43e224");
@@ -28,7 +26,7 @@ const Contact = () => {
       setResult("Form Submitted Successfully");
       event.target.reset();
     } else {
-      console.log("Error", data);
+      console.error("Error", data);
       setResult(data.message);
     }
   };
@@ -36,37 +34,34 @@ const Contact = () => {
   return (
     <div className="relative pt-20 z-0">
       <div className="container mx-auto my-5 p-5 max-w-[90%] flex flex-col md:flex-row items-center justify-between space-y-8 md:space-y-0">
-        <div className="flex-[0_0_48%] text-black bg-white/60 p-5 rounded-lg transition-transform duration-300 hover:backdrop-blur-sm hover:scale-105 animate-from-left">
+        <div className="flex-[0_0_48%] text-black bg-white/60 p-5 rounded-lg">
           <h3 className="text-xl font-medium flex items-center mb-5 text-black">
             Send us a message <img src={msg_icon} alt="" className="ml-2 w-9" />
           </h3>
           <p className="max-w-[450px] leading-relaxed">
-            Feel free to reach out through contact form or find our contact
+            Feel free to reach out through the contact form or find our contact
             information below. Your feedback, questions, and suggestions are
-            important to us as we strive to provide exceptional service to our
-            Wifuwki.
+            important to us as we strive to provide exceptional service.
           </p>
           <ul>
-            <li className="flex items-center my-5 animate-from-left">
+            <li className="flex items-center my-5">
               <img src={mail_icon} alt="" className="mr-2 w-6" />
               faxlover5@gmail.com
             </li>
-            <li className="flex items-center my-5 animate-from-right">
+            <li className="flex items-center my-5">
               <img src={phone_icon} alt="" className="mr-2 w-6" />
               +91 6262173362
             </li>
-            <li className="flex items-center my-5 animate-from-right">
+            <li className="flex items-center my-5">
               <img src={location_icon} alt="" className="mr-2 w-6" />
               Naval Kishor Nagar Khabra
             </li>
           </ul>
         </div>
-        <div className="flex-[0_0_48%] text-black bg-white/60 p-5 rounded-lg transition-transform duration-300 hover:backdrop-blur-sm hover:scale-105 animate-from-bottom">
+        <div className="flex-[0_0_48%] text-black bg-white/60 p-5 rounded-lg">
           <form onSubmit={onSubmit} className="space-y-4">
             <div>
-              <label className="block font-medium animate-from-top">
-                Your name
-              </label>
+              <label className="block font-medium">Your name</label>
               <input
                 type="text"
                 name="name"
@@ -76,9 +71,7 @@ const Contact = () => {
               />
             </div>
             <div>
-              <label className="block font-medium animate-from-top">
-                Your phone
-              </label>
+              <label className="block font-medium">Your phone</label>
               <input
                 type="tel"
                 name="phone"
@@ -88,7 +81,7 @@ const Contact = () => {
               />
             </div>
             <div>
-              <label className="block font-medium animate-from-top">
+              <label className="block font-medium">
                 Write your messages here
               </label>
               <textarea
@@ -101,7 +94,7 @@ const Contact = () => {
             </div>
             <button
               type="submit"
-              className="inline-flex items-center bg-blue-900 text-white py-3 px-6 mt-4 hover:bg-blue-700 transition-colors duration-300"
+              className="inline-flex items-center bg-blue-900 text-white py-3 px-6 mt-4 hover:bg-blue-700"
             >
               Submit now <img src={white_arrow} alt="" className="ml-2 w-4" />
             </button>
