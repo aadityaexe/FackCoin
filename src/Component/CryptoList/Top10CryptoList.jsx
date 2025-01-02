@@ -40,26 +40,28 @@ const Top10CryptoList = () => {
 
   return (
     <div className="container mx-auto p-4">
-      <h1 className="text-2xl text-blue-600 font-bold mb-4">
+      <h1 className="text-2xl text-center text-black bg-[#cadad3] rounded-lg  font-bold mb-4">
         Top 10 Cryptocurrencies
       </h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 rounded-xl">
         {top10Data.map((item) => (
-          <div key={item.id} className="crypto-card p-4 rounded-lg shadow-lg">
-            <h2 className="text-xl font-semibold">{item.name}</h2>
-            <p>
+          <div key={item.id} className="crypto-card p-4 rounded-lg shadow-lg ">
+            <h2 className="text-xl font-semibold text-black bg-slate-500 rounded-lg text-center">
+              {item.name}
+            </h2>
+            <p className="text-black rounded-xl">
               <strong>Coin:</strong> {item.coin}
             </p>
-            <p>
+            <p className="text-black rounded-xl">
               <strong>Type:</strong> {item.type}
             </p>
-            <p>
+            <p className="text-black rounded-xl">
               <strong>Algorithm:</strong> {item.algorithm}
             </p>
-            <p>
+            <p className="text-black rounded-xl">
               <strong>Price:</strong> ${item.price.toFixed(2)}
             </p>
-            <p>
+            <p className="text-black rounded-xl">
               <strong>Volume:</strong> {item.volume.toLocaleString()}
             </p>
           </div>

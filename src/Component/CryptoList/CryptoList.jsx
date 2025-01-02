@@ -55,34 +55,35 @@ const CryptoList = () => {
 
   return (
     <div className="container mx-auto p-4 pt-20 z-0">
-      <h1 className="text-2xl text-white font-bold mb-4">Crypto List</h1>
+      <h1 className="text-4xl  text-white rounded-xl bg-[#1b2522] text-center font-bold mb-4">
+        Crypto List
+      </h1>
       <input
         type="text"
         placeholder="Search by coin name"
-        className="border p-2 rounded mb-4 w-full"
+        className="border p-2 rounded-xl mb-4  w-full bg-[#cadad3]"
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
       />
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 pt-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 rounded-xl">
         {filteredData.map((item) => (
-          <div
-            key={item.id}
-            className="crypto-card p-4 rounded-lg shadow-lg bg-white"
-          >
-            <h2 className="text-xl font-semibold">{item.name}</h2>
-            <p>
+          <div key={item.id} className="crypto-card p-4 rounded-lg shadow-lg ">
+            <h2 className="text-xl font-semibold text-black bg-slate-500 rounded-lg text-center">
+              {item.name}
+            </h2>
+            <p className="text-black rounded-xl">
               <strong>Coin:</strong> {item.coin}
             </p>
-            <p>
+            <p className="text-black rounded-xl">
               <strong>Type:</strong> {item.type}
             </p>
-            <p>
+            <p className="text-black rounded-xl">
               <strong>Algorithm:</strong> {item.algorithm}
             </p>
-            <p>
+            <p className="text-black rounded-xl">
               <strong>Price:</strong> ${item.price.toFixed(2)}
             </p>
-            <p>
+            <p className="text-black rounded-xl">
               <strong>Volume:</strong> {item.volume.toLocaleString()}
             </p>
           </div>
