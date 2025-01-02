@@ -5,8 +5,10 @@ const TopCryptoSection = () => {
 
   return (
     <div className="flex flex-col items-center justify-center h-[50vh] text-white p-8">
-      <h1 className="text-4xl font-bold mb-6">Top Cryptocurrencies</h1>
-      <p className="text-xl mb-6 opacity-80">
+      <h1 className="text-4xl  text-white rounded-xl bg-[#1b2522] px-4 font-bold mb-6">
+        Top Cryptocurrencies
+      </h1>
+      <p className="text-xl mb-6 opacity-80 rounded-xl text-black">
         Stay updated with the latest trends in the world of cryptocurrency.
       </p>
       <button
