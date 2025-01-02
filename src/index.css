@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -10,9 +11,9 @@
 }
 
 body {
-  background-color: #f0f0f0;
+  background-color: #481818;
   /* Replace with your desired background color */
-  background-image: url('./assets/Background.png');
+  background-image: url("./assets/Background.jpg");
   /* Replace with the path to your image */
   background-size: cover;
   /* This makes sure the image covers the entire background */
@@ -20,4 +21,57 @@ body {
   /* Prevents the background image from repeating */
   background-attachment: fixed;
   /* Makes the background image stay fixed while scrolling */
+
+}
+
+p {
+  background-color: #cadad3;
+  color: white;
+  padding: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #1b2522;
+
+}
+
+li {
+  color: #cadad3;
+}
+
+ul {
+  color: #1b2522;
+
+}
+
+ol {
+  color: #cadad3;
+
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #646a68;
+  /* Corduroy */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #1b2522;
+  /* Outer Space */
+}
+
+/* For the scrollbar on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #cadad3;
+  /* Conch */
 }
