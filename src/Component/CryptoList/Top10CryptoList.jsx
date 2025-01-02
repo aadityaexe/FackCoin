@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import "./CryptoList.css";
 
 const Top10CryptoList = () => {
   const [top10Data, setTop10Data] = useState([]);
@@ -40,29 +39,27 @@ const Top10CryptoList = () => {
   if (loading) return <p>Loading...</p>;
 
   return (
-    <div className="container mx-auto p-4 z-0">
-      <h1 className="text-2xl  text-blue-600 font-bold mb-4">
+    <div className="container mx-auto p-4">
+      <h1 className="text-2xl text-blue-600 font-bold mb-4">
         Top 10 Cryptocurrencies
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {top10Data.map((item) => (
           <div key={item.id} className="crypto-card p-4 rounded-lg shadow-lg">
-            <h2 className="text-xl font-semibold slide-in-right">
-              {item.name}
-            </h2>
-            <p className="slide-in-right">
+            <h2 className="text-xl font-semibold">{item.name}</h2>
+            <p>
               <strong>Coin:</strong> {item.coin}
             </p>
-            <p className="slide-in-right">
+            <p>
               <strong>Type:</strong> {item.type}
             </p>
-            <p className="slide-in-right">
+            <p>
               <strong>Algorithm:</strong> {item.algorithm}
             </p>
-            <p className="slide-in-right">
+            <p>
               <strong>Price:</strong> ${item.price.toFixed(2)}
             </p>
-            <p className="slide-in-right">
+            <p>
               <strong>Volume:</strong> {item.volume.toLocaleString()}
             </p>
           </div>
