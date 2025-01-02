@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className=" bg-gradient-to-r from-purple-600 via-gray-500 to-sky-500 text-white mt-5 py-8 px-4 z-0">
+    <footer className="bg-gray-800 text-white mt-5 py-8 px-4">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
         {/* Logo or Site Name */}
         <div className="text-center md:text-left">
@@ -31,30 +31,30 @@ const Footer = () => {
           <a
             href="https://twitter.com"
             aria-label="Twitter"
-            className="hover:scale-110 transform transition"
+            className="hover:underline"
           >
-            <i className="fab fa-twitter">Twitter</i>
+            <i className="fab fa-twitter"></i> Twitter
           </a>
           <a
             href="https://facebook.com"
             aria-label="Facebook"
-            className="hover:scale-110 transform transition"
+            className="hover:underline"
           >
-            <i className="fab fa-facebook">Facebook</i>
+            <i className="fab fa-facebook"></i> Facebook
           </a>
           <a
             href="https://linkedin.com"
             aria-label="LinkedIn"
-            className="hover:scale-110 transform transition"
+            className="hover:underline"
           >
-            <i className="fab fa-linkedin">LinkedIn</i>
+            <i className="fab fa-linkedin"></i> LinkedIn
           </a>
           <a
             href="https://instagram.com"
             aria-label="Instagram"
-            className="hover:scale-110 transform transition"
+            className="hover:underline"
           >
-            <i className="fab fa-instagram">Instagram</i>
+            <i className="fab fa-instagram"></i> Instagram
           </a>
         </div>
       </div>
