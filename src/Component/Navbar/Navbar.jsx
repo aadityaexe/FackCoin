@@ -1,34 +1,36 @@
-import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import "./Navbar.css";
 
 const Navbar = () => {
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    setIsVisible(true);
-  }, []);
-
   return (
-    <nav
-      className={`fixed w-full z-10 p-4 text-white font-bold backdrop-blur-lg bg-transparent transition-all duration-1000 ease-in-out ${
-        isVisible ? "navbar-visible" : "navbar-hidden"
-      }`}
-    >
+    <nav className="fixed w-full z-10 p-4 text-white font-bold backdrop-blur-lg bg-black/60 shadow-md">
       <div className="container mx-auto flex justify-between items-center">
-        <div className="text-lg">Fake Coin</div>
-        <ul className="flex space-x-4">
+        <div className="text-xl">Fake Coin</div>
+        <ul className="flex space-x-6">
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/" className="hover:text-gray-300 transition-colors">
+              Home
+            </Link>
           </li>
           <li>
-            <Link to="/crupto-list">Crupto List</Link>
+            <Link
+              to="/crypto-list"
+              className="hover:text-gray-300 transition-colors"
+            >
+              Crypto List
+            </Link>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <Link to="/about" className="hover:text-gray-300 transition-colors">
+              About
+            </Link>
           </li>
           <li>
-            <Link to="/contact">Contact</Link>
+            <Link
+              to="/contact"
+              className="hover:text-gray-300 transition-colors"
+            >
+              Contact
+            </Link>
           </li>
         </ul>
       </div>
