@@ -1,11 +1,12 @@
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-white mt-5 py-8 px-4">
+    <footer className=" mt-5 py-8 px-4 bg-[#cadad3] bg-opacity-50">
+      <hr />
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
         {/* Logo or Site Name */}
         <div className="text-center md:text-left">
           <h1 className="text-2xl font-bold">Fake Coin</h1>
-          <p className="text-sm mt-2">
+          <p className="text-sm mt-2  text-black rounded-xl">
             &copy; 2024 CryptoSite. All Rights Reserved.
           </p>
         </div>
@@ -61,7 +62,5 @@ const Footer = () => {
     </footer>
   );
 };
-
-
 
 export default Footer;
