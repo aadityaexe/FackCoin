@@ -38,21 +38,21 @@ const Contact = () => {
           <h3 className="text-xl font-medium flex items-center mb-5 text-black">
             Send us a message <img src={msg_icon} alt="" className="ml-2 w-9" />
           </h3>
-          <p className="max-w-[450px] leading-relaxed">
+          <p className="max-w-[450px] leading-relaxed  text-black rounded-xl">
             Feel free to reach out through the contact form or find our contact
             information below. Your feedback, questions, and suggestions are
             important to us as we strive to provide exceptional service.
           </p>
           <ul>
-            <li className="flex items-center my-5">
+            <li className="flex items-center my-5  text-black rounded-xl">
               <img src={mail_icon} alt="" className="mr-2 w-6" />
               faxlover5@gmail.com
             </li>
-            <li className="flex items-center my-5">
+            <li className="flex items-center my-5  text-black rounded-xl">
               <img src={phone_icon} alt="" className="mr-2 w-6" />
               +91 6262173362
             </li>
-            <li className="flex items-center my-5">
+            <li className="flex items-center my-5  text-black rounded-xl">
               <img src={location_icon} alt="" className="mr-2 w-6" />
               Naval Kishor Nagar Khabra
             </li>
@@ -94,7 +94,7 @@ const Contact = () => {
             </div>
             <button
               type="submit"
-              className="inline-flex items-center bg-blue-900 text-white py-3 px-6 mt-4 hover:bg-blue-700"
+              className="inline-flex items-center rounded-md bg-blue-900 text-white py-3 px-6 mt-4 hover:bg-blue-700"
             >
               Submit now <img src={white_arrow} alt="" className="ml-2 w-4" />
             </button>
