@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import Loader from "../Loader/Loader";
 
 const Top10CryptoList = () => {
   const [top10Data, setTop10Data] = useState([]);
@@ -36,7 +37,7 @@ const Top10CryptoList = () => {
     fetchData();
   }, []);
 
-  if (loading) return <p>Loading...</p>;
+  if (loading) return <Loader />;
 
   return (
     <div className="container mx-auto p-4">
