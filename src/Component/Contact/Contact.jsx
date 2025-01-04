@@ -94,7 +94,7 @@ const Contact = () => {
             </div>
             <button
               type="submit"
-              className="inline-flex items-center rounded-md bg-blue-900 text-white py-3 px-6 mt-4 hover:bg-blue-700"
+              className="inline-flex items-center rounded-md  text-black py-3 px-6 mt-4 bg-gray-400 hover:bg-gray-600"
             >
               Submit now <img src={white_arrow} alt="" className="ml-2 w-4" />
             </button>
