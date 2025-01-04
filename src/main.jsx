@@ -14,6 +14,8 @@ import Top10CryptoList from "./Component/CryptoList/Top10CryptoList.jsx";
 import Footer from "./Component/Footer/Footer.jsx";
 import Services from "./Component/Services/Services.jsx";
 import Home from "./Component/AllInOne/Home.jsx";
+import CryptoSafetyGuide from "./Component/CryptoSafetyGuide/CryptoSafetyGuide.jsx";
+import Quiz from "./Component/CryptoSafetyGuide/Quiz.jsx";
 
 const router = createBrowserRouter([
   {
@@ -26,6 +28,7 @@ const router = createBrowserRouter([
           <>
             <Hero />
             <TopCryptoSection />
+            <CryptoSafetyGuide />
             <Services />
             <Footer />
           </>
@@ -36,6 +39,7 @@ const router = createBrowserRouter([
       { path: "/contact", element: <Contact /> },
       { path: "/crypto-list", element: <CryptoList /> },
       { path: "/top10-crypto", element: <Top10CryptoList /> },
+      { path: "/quiz", element: <Quiz /> },
     ],
   },
 ]);
