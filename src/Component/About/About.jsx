@@ -2,7 +2,7 @@ const About = () => {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center py-12 px-6 ">
       <div className="max-w-4xl mx-auto shadow-xl rounded-lg p-10  bg-opacity-80 backdrop-blur-md">
-        <h1 className="text-4xl font-extrabold bg-[#1b2522] text-cyan-700 text-center rounded-xl text-centermb-8">
+        <h1 className="text-4xl font-extrabold p-3 mb-3 bg-[#1b2522] text-cyan-700 text-center rounded-xl text-centermb-8">
           About CryptoSite
         </h1>
         <p className=" leading-relaxed mb-6 text-black rounded-xl">
